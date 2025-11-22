@@ -1,7 +1,6 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
 /.pnp
 .pnp.*
 .yarn/*
@@ -33,16 +32,19 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 
-# vercel
-.vercel
-
 # typescript
 *.tsbuildinfo
 next-env.d.ts
 
-.vercel
-
 node_modules/
 dist/
-build/
-.vercel/
+config.env.local
+*.log
+
+# images and volunteer data
+public/images/*
+public/volunteer/*
+*.jpg
+*.jpeg
+*.JPG
+*.png
